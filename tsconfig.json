@@ -1,5 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "types": ["astro/client"]
+  },
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]
 }
